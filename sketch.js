@@ -154,7 +154,7 @@ function overlap(a, b) {
 
 // Draws the blob using Perlin noise for a soft, breathing effect
 function drawBlobCircle(b) {
-  fill(20, 120, 255);
+  fill(20 + random(-30, 30), 120 + random(-30, 30), 255);
   beginShape();
 
   for (let i = 0; i < b.points; i++) {
@@ -169,7 +169,7 @@ function drawBlobCircle(b) {
 
     const r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
 
-    vertex(b.x + cos(a) * r, b.y + sin(a) * r);
+    vertex(b.x + cos(a) * r + random(-1, 1), b.y + sin(a) * r + random(-1, 1));
   }
 
   endShape(CLOSE);
