@@ -1,28 +1,30 @@
 ## Project Title
 
-GBDA302 Week 2 Example 3: Platforms (AABB Collisions)
+Side Quest 2 – Anxiety Blurb
 
 ---
 
 ## Authors
 
-Karen Cochrane and David Han
+Original Code: Karen Cochrane and David Han
+
+Aswina Sivaloganathan
+WatID: [a2sivalo]
+Student #: [21071968]
 
 ---
 
 ## Description
 
-Adds several rectangular platforms. The blob is drawn as a noisy circle but collides using a simple axis-aligned bounding box (AABB). X and Y are resolved separately to keep behaviour predictable and teachable.
+This sketch explores how subtle visual instability can communicate emotion. A blurb is modified to represent anxiety through restrained colour jitter rather than dramatic movement.
 
 ---
 
-## Learning Goals
+## Setup and Interaction
 
-Learning Goals:
-
-- Convert a circular sprite to an AABB for collision
-- Implement overlap test and push-out resolution
-- Manage grounded state only when landing on top faces
+- Open the GitHub Pages link in Google Chrome
+- Use key arrows to move around areas
+- Observe the subtle flickering and instability of the blurb
 
 ---
 
@@ -32,8 +34,17 @@ N/A
 
 ---
 
-## GenAI
+## Iteration Notes
 
-The code was written by Dr. Karen Cochrane but she used GenAI to write the comments.
+Post-Playtest (Self-Testing)
+
+- Reduced the intensity of colour variation after early tests felt too chaotic.
+- Limited jitter only to to fill() value.
+- Adjusted randomness ranges to keep the colour cohesive while still unstable.
+
+Post-Showcase (Planned Improvements)
+
+- Experiment with noise-based colour variation for smoother instability.
+- Add more ways to minimally enhance the anxious effect without adding too much motion.
 
 ---

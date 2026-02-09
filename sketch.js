@@ -169,7 +169,7 @@ function drawBlobCircle(b) {
 
     const r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
 
-    vertex(b.x + cos(a) * r + random(-1, 1), b.y + sin(a) * r + random(-1, 1));
+    vertex(b.x + cos(a) * r, b.y + sin(a) * r);
   }
 
   endShape(CLOSE);
